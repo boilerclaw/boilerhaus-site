@@ -22,14 +22,15 @@
 
 .wordmark {
   font-family: var(--font-serif), serif;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 300;
+  letter-spacing: -0.02em;
   font-size: clamp(3.2rem, 10vw, 8.5rem);
   line-height: 0.95;
 }
 
 .tagline {
   font-family: var(--font-sans), sans-serif;
+  font-weight: 300;
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--muted);
   margin-bottom: 1rem;
@@ -44,6 +45,7 @@
 
 .links a {
   font-family: var(--font-sans), sans-serif;
+  font-weight: 300;
   font-size: 0.98rem;
   border-bottom: 1px solid color-mix(in oklab, var(--text) 20%, transparent);
   padding-bottom: 0.2rem;

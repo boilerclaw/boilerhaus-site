@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Figtree, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const figtree = Figtree({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["300", "400"],
 });
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["300", "400"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable}`}>{children}</body>
+      <body className={`${figtree.variable} ${fraunces.variable}`}>{children}</body>
     </html>
   );
 }

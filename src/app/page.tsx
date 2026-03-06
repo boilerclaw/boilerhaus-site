@@ -12,6 +12,19 @@ const links = [
   { label: "GitHub", href: "https://github.com/boilerrat" },
 ];
 
+const agentLinks = [
+  {
+    name: "Boilerclaw",
+    href: "https://github.com/boilerclaw",
+    description: "Autonomous builder agent",
+  },
+  {
+    name: "Boilermolt",
+    href: "https://github.com/boilermolt",
+    description: "Companion execution agent",
+  },
+];
+
 export default function Home() {
   const [theme, setTheme] = useState<Theme>("light");
 
@@ -55,6 +68,24 @@ export default function Home() {
             </a>
           ))}
         </nav>
+
+        <section className={styles.agentSection} aria-label="Agent profiles">
+          <p className={styles.agentHeading}>agents</p>
+          <div className={styles.agentGrid}>
+            {agentLinks.map((agent) => (
+              <a
+                key={agent.name}
+                className={styles.agentCard}
+                href={agent.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className={styles.agentName}>{agent.name}</span>
+                <span className={styles.agentDescription}>{agent.description}</span>
+              </a>
+            ))}
+          </div>
+        </section>
       </section>
 
       <footer className={styles.footer}>© 2026 boilerhaus</footer>

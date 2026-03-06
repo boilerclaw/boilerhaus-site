@@ -14,14 +14,14 @@ const links = [
 
 const agentLinks = [
   {
-    name: "Boilerclaw",
+    name: "boilerclaw",
     href: "https://github.com/boilerclaw",
-    description: "Autonomous builder agent",
+    description: "autonomous builder agent",
   },
   {
-    name: "Boilermolt",
+    name: "boilermolt",
     href: "https://github.com/boilermolt",
-    description: "Companion execution agent",
+    description: "companion execution agent",
   },
 ];
 

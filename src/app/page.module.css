@@ -28,8 +28,7 @@
 .agentHeading {
   font-family: var(--font-sans), sans-serif;
   font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--muted);
   margin-bottom: 0.75rem;
 }
